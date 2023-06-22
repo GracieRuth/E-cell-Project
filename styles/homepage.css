@@ -1,0 +1,54 @@
+body{
+    background: url(images/homepagebg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Roboto,Arial;
+}
+
+.header{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+    position: right;
+    justify-content: right;
+    
+}
+
+.name{
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    padding-left: 15px;
+    padding-top: 10px;
+    
+}
+
+
+.tabs2{
+    margin-right: 10px;
+    padding: 5px 5px;
+}
+
+.intro{
+    display: flex;
+    margin-top: 200px;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.tabs2:hover{
+    background-color: gray;
+    
+}

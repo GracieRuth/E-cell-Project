@@ -1,0 +1,81 @@
+body{
+    font-family: Roboto,Arial;
+}
+
+header{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: right;
+    justify-content: right;
+}
+
+.name{
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    padding-left: 15px;
+    padding-top: 10px;
+    
+}
+
+
+.tabs2{
+    margin-right: 10px;
+    padding: 5px 5px;
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.dp{
+    display: flex;
+    position: right;
+    justify-content: right;
+    padding: 50px 50px;
+    height: 350px;
+}
+
+.content{
+    padding: 50px 50px;
+}
+
+.socialmedia{
+    display: flex;
+    flex-direction: row;
+    padding-top: 25px;
+}
+
+.icons {
+    display: flex;
+    width: 15px;
+    height: 15px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.resume{
+    display: flex;
+    padding: 15px 15px;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.tabs2:hover{
+    background-color: gray;
+    
+}

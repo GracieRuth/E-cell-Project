@@ -1,0 +1,97 @@
+body{
+    background: url(images/homepagebg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Roboto,Arial;
+}
+
+.header{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.tabs{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+    position: right;
+    justify-content: right;
+    
+}
+
+.name{
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    padding-left: 15px;
+    padding-top: 10px;
+    
+}
+
+
+.tabs2{
+    margin-right: 10px;
+    padding: 5px 5px;
+}
+
+
+.heading{
+    display: flex;
+    justify-content: left;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-weight: 550;
+    padding: 10px 15px;
+    font-size: 25px;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.tabs2:hover{
+    background-color: gray;
+    
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+}
+
+fieldset{
+    box-sizing: border-box;
+}
+form{
+    width: 50%;
+}
+
+.form-input{
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+}
+input{
+    width: 50%;
+    justify-content: center;
+}
+
+.submit-button{
+    display: flex;
+    justify-content: center;
+}
+
+.submit{
+    background-color: black;
+    color: white;
+    padding: 8px 8px;
+    border-radius: 10px;
+    margin-top: 30px;
+    justify-content: center;
+}

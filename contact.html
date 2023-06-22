@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CONTACT</title>
+        <link rel="stylesheet" href="styles/contact.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/homepage.css">
+    </head>
+    </head>
+        <body>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            
+            <div class="header">
+                <div class="name">
+                    Gracie Ruth
+                </div>
+                <div class="tabs">
+                    <div class="tabs2">
+                        <a href="homepage.html">HOME</a>
+                    </div>
+                    <div class="tabs2">
+                        <a href="work.html">WORK</a>
+                    </div>
+                    <div class="tabs2">
+                        <a href="aboutme.html">ABOUT ME</a>
+                    </div>
+                    <div class="tabs2">
+                        <a href="contact.html">CONTACT</a>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="heading"> Want to get in touch?<br> Drop me a line!</div>
+           
+            <div class="form-container">
+                <form>
+                    <fieldset>
+                        <label for="name">Name*</label>
+                        <div class="form-input">
+                            
+                            <input type="text" name="name" id="name" placeholder="Your Name..." >
+                        </div>
+                        <label for="email">Email Address*</label>
+                        <div class="form-input">
+                            <input type="text" name="email" id="email" placeholder="Your Email Address...">
+                        </div>
+                        <label for="message">Message*</label>
+                        <div class="form-input">
+                            <textarea name="message" id="message" placeholder="Your Message..." rows="15" cols="45"></textarea>
+                        </div>
+                        
+                    </fieldset>
+                    
+                </form>
+            </div>
+
+            <div class="submit-button">
+                <button class="submit" onclick="saveFile()">SUBMIT</button>
+            </div>
+            
+    
+        </body>
+</html>
+
+
+
+
+
+        
+<script>
+    let saveFile = () => {
+    	
+        
+    	const name = document.getElementById('name');
+        const age = document.getElementById('email');
+        const msg = document.getElementById('message');
+        
+        
+        let data = 
+            '\r Name: ' + name.value + ' \r\n ' + 
+            'Email: ' + email.value + ' \r\n ' + 
+            'Message: ' + message.value;
+        
+        
+        const textToBLOB = new Blob([data], { type: 'text/plain' });
+        const sFileName = 'formData.txt';	  
+
+        let newLink = document.createElement("a");
+        newLink.download = sFileName;
+
+        if (window.webkitURL != null) {
+            newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+        }
+        else {
+            newLink.href = window.URL.createObjectURL(textToBLOB);
+            newLink.style.display = "none";
+            document.body.appendChild(newLink);
+        }
+
+        newLink.click(); 
+    }
+</script>
+</html>
